@@ -66,6 +66,7 @@ section{
      aside{
        width: 30%;
        background-color: darkgrey;
+       margin: 0px 0px 0px 10px;
        padding: 10px;
      }
 
@@ -175,3 +176,53 @@ footer{
 }
 
 
+
+
+
+@media  (max-width:800px){
+   .titulo{
+      font-size: 15px;
+  }
+  .nav{
+   font-size: 12px;
+  }
+
+}
+
+
+
+@media  (max-width:670px){
+        article{
+         width: 80%;
+        }
+     
+}
+
+
+@media  (max-width:450px){
+    header{
+      height: 100px;
+      margin: 10px 0px;
+    }
+   
+   .menu{
+      flex-flow: column nowrap;
+      
+      }
+    
+   section{
+      flex-flow: column nowrap;
+      margin: 10px 0px;
+   }
+
+   aside{
+      width: 90%; 
+      background-position: center;
+      margin-bottom: 10px;
+      
+    }
+
+   .indicadores{
+      width: 90%;
+   } 
+}
