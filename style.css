@@ -16,9 +16,17 @@ header{
        flex-flow: column nowrap; 
        background-position: center;
        background-attachment: contain;
-       background-color:yellowgreen;
+       background: linear-gradient(90deg, rgb(255, 255, 255) 15%, rgba(40, 191, 90, 0.879) 40%);
        margin-bottom: 10px;
        height: 60px;
+       justify-content: space-around;
+        align-items: justify;
+    }
+}
+
+.header-logo {
+   float: left;
+   
 }
 
    .menu{
@@ -31,14 +39,12 @@ header{
 
 
 
-    .logo{
-         color: white;
-      }
       
        
     .titulo{
-         font-size: 25px;
+         font-size: 40px;
          color: white;
+         font-family: 'Kanit', sans-serif;
      }
 
 
