@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/responsive.css">
+    <link rel="shortcut icon" href="img\corazon-saludable.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/989464ad2b.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
 
@@ -33,20 +37,18 @@
             
     </header>
     <section class="form-r">
-        <form action="Link" method="post" class="interno">
+        <form class="fcontacto" name='fcontacto' action="destino.html">
         <fieldset>
             <legend><b class="encabezado1">Contacto</b></legend>
             <label for="Nombre" class="label1">Nombre</label>
-            <input class="controls" type="text"  placeholder="Ingrese su nombre" size="20" maxlength="20" autofocus required> <br>
+            <input name ="nombre" class="nombre" type="text"  placeholder="Ingrese su nombre" size="30" maxlength="30" autofocus required> <br><br>
             <label for="Apellido" class="label1">Apellido</label>
-            <input class="controls" type="text"  placeholder="Ingrese su apellido" size="20" maxlength="20" required><br>
-            <label for="Telefono" class="label1">Teléfono</label>
-            <input class="controls" type="tel" size="10" maxlength="10"><br>
+            <input name="apellido" class="apellido" type="text"  placeholder="Ingrese su apellido" size="30" maxlength="30" required><br><br>
             <label for="Email" class="label1">Email</label>
-            <input class="controls" type="email" size="20" maxlength="25" placeholder="aaaaaa@Gmail.com" required> <br> <br>
+            <input name="email" class="email" type="email" size="33" maxlength="35" placeholder="aaaaaa@Gmail.com" required> <br> <br>
             <label for="Consultas" class="label1"><b class="consulta1">Cual es su Consulta</b></label><br>
-            <textarea name="Consultas" id="Consultas" cols="30" rows="10" class="consulta2"></textarea><br>
-            <input class="boton" type="submit" value="Enviar" id="botonEnviar">
+            <textarea name="consulta" class="consulta" cols="38" rows="10"   placeholder="Ingrese su consulta" required></textarea><br><br>
+            <input class="boton" type="submit" value="Enviar" id="botonEnviar" onclick="validacion_al_enviar_datos()"/>
             <input class="boton" type="reset" value="Borrar" id="botonBorrar">
             </fieldset>
             </form>
@@ -57,7 +59,10 @@
             <div><a class="redes" href="#"><i class="fa-brands fa-instagram"></i></a></div>
         </div>
         <div class="social">Derechos Reservados</div>
+        
 
   </footer>
+
+  <script src="js/main.js"></script>
   </body>
   </html>
